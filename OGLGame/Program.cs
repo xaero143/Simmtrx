@@ -1,4 +1,4 @@
-﻿
+﻿using OpenTK.Windowing.Desktop;
 
 namespace OGLGame
 {
@@ -8,6 +8,11 @@ namespace OGLGame
         {
             Console.WriteLine("Hello, World!");
             Console.ReadKey();
+
+            using (Game game = new Game(500, 500))
+            {
+                Game.Run();
+            }
         }
     }
 }
