@@ -10,7 +10,8 @@ namespace OGLGame
 {
     internal class Game: GameWindow
     {
-        private static int ScreenWidth; private static int ScreenHeight;
+        private static int ScreenWidth; 
+        private static int ScreenHeight;
         public Game(int width, int height) : base(GameWindowSettings.Default, NativeWindowSettings.Default)
         {
             this.CenterWindow(new OpenTK.Mathematics.Vector2i(width, height));

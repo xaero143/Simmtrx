@@ -6,13 +6,16 @@ namespace OGLGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.ReadKey();
+           
+           // Console.ReadKey();
 
-            using (Game game = new Game(500, 500))
-            {
-                Game.Run();
-            }
+            //using (Game game = new Game(500, 500))
+            //{
+            //    Game.Run();
+            //}
+
+            Game game =  new Game(500, 500);
+            game.Run();
         }
     }
 }
