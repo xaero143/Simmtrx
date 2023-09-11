@@ -1,4 +1,5 @@
-﻿
+﻿using OpenTK.Windowing.Desktop;
+using OpenTK.Graphics.OpenGL4;
 
 namespace OGLGame
 {
@@ -6,8 +7,10 @@ namespace OGLGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.ReadKey();
+            GameScreen game =  new GameScreen(500, 500);
+            game.Run();
+
+
         }
     }
 }
